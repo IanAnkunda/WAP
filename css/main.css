@@ -1,10 +1,22 @@
 .Header {
-    background-image: url("images\programming.png");
+    background-image: url('../images/programming.png');
     background-repeat: no-repeat, repeat;
     background-color: #cccccc;
+    background-attachment:fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-position-x: center;
+  }
+  .Profile{
+    top: 33px;
+    left: 10px;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
   }
   .profilePic{
-    border-radius: 50%; width: 20%;
+    border-radius: 50%; width: 15%;
   }
   #padding10{
     padding: 10px;
