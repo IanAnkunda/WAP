@@ -1,0 +1,14 @@
+.Header {
+    background-image: url("images\programming.png");
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+  }
+  .profilePic{
+    border-radius: 50%; width: 20%;
+  }
+  #padding10{
+    padding: 10px;
+  }
+  #padding20{
+    padding: 20px;
+  }
