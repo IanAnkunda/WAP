@@ -2,7 +2,7 @@ body{
     font-family: Georgia, Garamond, serif;
     color: #404040;
     size: 11pt;
-    background-image: url('../images/silverware.jpg');
+    /*background-image: url('../images/silverware.jpg');*/
 }
 a{
     color: #A4A400;
@@ -12,23 +12,24 @@ footer{
     font-family: 'Courier New', Courier, monospace;
     font: courier;
 }
+blockquote {
+    font-style: italic;
+    background-color: #FFFFA8;
+}
 ul.disc-none{list-style: none;}
 .mainHeading{
-    font: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
-    font: bold;
-    padding: 10px;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font: 22pt;
     text-align: center;
-    font-size: 22pt;
     font-weight: 500;
 }
 .heading{
-    font: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     color: #A4A400;
     background-color: #F0F0F0;
     text-decoration: underline;
     font-size: 18pt;
-    font-weight: 200;
 }
-#line-thru{
+.line-thru{
     text-decoration: line-through;
 }
