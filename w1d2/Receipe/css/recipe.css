@@ -14,6 +14,7 @@ footer{
 }
 ul.disc-none{list-style: none;}
 .mainHeading{
+    font: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     font: bold;
     padding: 10px;
     text-align: center;
