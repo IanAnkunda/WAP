@@ -2,6 +2,7 @@ body{
     font-family: Georgia, Garamond, serif;
     color: #404040;
     size: 11pt;
+    background-image: url('../images/silverware.jpg');
 }
 a{
     color: #A4A400;
