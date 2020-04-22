@@ -1,7 +1,7 @@
 body{
     font-family: Georgia, Garamond, serif;
     color: #404040;
-    size: 11pt;
+    font-size: 11pt;
     /*background-image: url('../images/silverware.jpg');*/
 }
 a{
@@ -10,13 +10,15 @@ a{
 footer{
     float: right;
     font-family: 'Courier New', Courier, monospace;
-    font: courier;
 }
 blockquote {
     font-style: italic;
     background-color: #FFFFA8;
 }
-ul.disc-none{list-style: none;}
+ul.disc-none{
+    list-style: none;
+}
+
 .mainHeading{
     font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     font: 22pt;
