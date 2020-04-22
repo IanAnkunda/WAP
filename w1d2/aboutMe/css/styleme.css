@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(53, 94, 94);
+    color: floralwhite;
+}
+section{
+    padding-left: 10px;
+}
+h1{
+    font: Arial Black;
+    color: rgb(2, 255, 2);
+}
+h2{ 
+    font: Arial Black;
+    color: rgb(106, 106, 252);
+}
+h3{font: Tahoma;}
+span{ color: yellowgreen;}
+ul{ list-style-type: disc}
+ol{ list-style-type: decimal}
+.moodimg{
+    width: 20%;
+}
+.imdblink{
+    color: tomato;;
+}

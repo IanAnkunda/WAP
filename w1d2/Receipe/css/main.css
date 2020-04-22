@@ -1,0 +1,32 @@
+body{
+    font-family: Georgia, Garamond, serif;
+    color: #404040;
+    size: 11pt;
+}
+a{
+    color: #A4A400;
+}
+footer{
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font: courier;
+}
+ul.disc-none{list-style: none;}
+.mainHeading{
+    font: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 500;
+}
+.heading{
+    font: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    font-size: 18pt;
+    font-weight: 200;
+}
+#line-thru{
+    text-decoration: line-through;
+}
