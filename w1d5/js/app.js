@@ -122,6 +122,7 @@ function computeSumOfSquaresOfEvensOnly(arrEvenarray){
 const arrEven = [1,2,3,4,5];
 console.log(computeSumOfSquaresOfEvensOnly(arrEven));
 
+// No.11
 function sumReduce(arr){
     return arr.reduce((a,b)=> a+b);
 }
@@ -132,7 +133,7 @@ function mulReduce(arr){
 }
 console.log(mulReduce(array));
 
-// No.11
+// No.12
 function findSecondBiggest(arr){
     let first =arr[0];
     let second = arr[0];
@@ -146,3 +147,41 @@ function findSecondBiggest(arr){
 }
 console.log(array);
 console.log(findSecondBiggest(array))
+
+//No.13
+function printFibo(n, a,b){
+    const output = [];
+    output[0] = a;
+    output[1] = b;
+    if (n === 1) {
+        return output[0];
+    }
+    else if (n === 2) {
+        return output;
+    }
+    else {
+        for (let i = 2; i < n; i++) {
+            output[i] = output[i - 1] + output[i - 2];
+        }
+        return output;
+    }
+}
+console.log("\""+ printFibo(10,0,1)+ "\", as output");
+
+//No 14
+
+
+//No 15 -- clock
+function displayClock() {
+    let d = new Date();
+    d = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()} ${d.getHours()} :${d.getMinutes()}:${d.getSeconds()}`
+    
+    document.getElementById('clock').innerHTML = d;
+    setTimeout(displayClock, 1000);
+     }
+     function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
+        }
+        
+    
