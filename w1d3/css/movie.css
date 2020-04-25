@@ -1,6 +1,7 @@
 body{
     background-image: url('../images/background.png');
-    
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, serif;
 }
 .headertext{
     font: bold 24pt;
@@ -25,8 +26,6 @@ body{
 .column{
     float: left;
     width: 550px;
-    
-
 }
 .reviewHeader{
     background-image: url('../images/rbg.png');
@@ -38,7 +37,34 @@ body{
 
 }
 .reviewHeader span{
+    vertical-align: super;
+}
+.reviewHeader img{
+    vertical-align: super;
+    border-radius: 15px 0 0 0;
+}
+.reviewHeader span{
     padding: 10px;
+}
+#reviews {
+    float: left;
+    width: 550px;
+      
+}
+
+#review-header {
+    background-image: url('../images/rbg.png');
+    height: 83px;
+    width: 100%;
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    border-radius: 15px 0 0 0;
+}
+
+#review-header img{
+    vertical-align: sub;
+    border-radius: 15px 0 0 0;
 }
 .sidebar{
         float:right;
