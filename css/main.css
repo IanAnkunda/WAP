@@ -24,4 +24,7 @@
   #padding20{
     padding: 20px;
   }
+  li a{
+    text-decoration: none;
+  }
   

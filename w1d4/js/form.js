@@ -1,6 +1,6 @@
 "use strict";
 
-function printDetails(e) {
+function printDetails() {
         let email = document.getElementById('email').value;
         let password = document.getElementById('password').value;
         let website = document.getElementById('website').value;
@@ -9,7 +9,7 @@ function printDetails(e) {
         console.log("Website: " + website);
     }
 
-    function printDetails(e) {
+    function printDetails() {
         let productNumber = document.getElementById('productNumber').value;
         let productName = document.getElementById('name').value;
         let price = document.getElementById('unitPrice').value;
