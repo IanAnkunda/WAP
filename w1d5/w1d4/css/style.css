@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin-top: 50px;
+}
+input{
+    border:1px #D9D9D9;
+    border-radius: 2px;
+    padding: 10px;
+}
+label{
+    font-weight: bold;
+    font-size: 15px;
+}
+.submit-btn{
+    background-color: #007BFF;
+    color: white;
+    width: 20%;
+}
+
+/* web form 2 */
+.menu{
+    background-color: #38A8E8;
+    padding: 10px;
+}
+.menu a{
+    color: white;
+    font-size: large;
+}
+.search-div{
+    display: inline;
+}
+.vl {
+    border-right: 3px solid white;
+    height: 5%;
+    margin-left: 10px;  
+  }
+  .search-btn{
+      color: #515662;
+      background-color:#EAEDF0;
+  }
+  .btn-reset, .btn-cancel, .btn-add{
+      float: right;
+      margin: 10px;
+  }
+  p.desc{
+      color: #B9ACA9;
+      font-size: small;
+  }
+  .navbar-brand.vl{
+      padding-right: 10px;
+  }
+  @media only screen and (max-width:992px){
+      .vl{
+          border-right: 0px;
+      }
+}

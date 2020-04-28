@@ -38,5 +38,43 @@ function increment(){
 }
 
 function Atinlay(){
-    
+
+}
+function transformToPigLatin() {
+    const words = document.getElementById("text").value;
+    const arr = words.split(' ');
+    for (let i=0;i<arr.length;i++) {
+        var word = arr[i];
+        if (word.length > 0 && isNaN(word)) {
+            arr[i] = checkConsonant(word);
+        }
+    }
+    document.getElementById("text").value = arr.join(' ');
+
+}
+
+function checkConsonant(word) {
+    let firstLetter = word.charAt(0)
+    let result = ['a', 'e', 'i', 'o', 'u'].indexOf(firstLetter.toLowerCase());
+    if (result >= 0) {
+        word += 'ay';
+
+    }
+    else {
+        word = word.substring(1);
+        word += firstLetter + 'ay';
+    }
+    return word;
+}
+
+function transformMalkovitch() {
+    const words = document.getElementById("text").value;
+    const arr = words.split(' ');
+    for (let i=0;i<arr.length;i++) {
+        var word = arr[i];
+        if (word.length >= 5 && isNaN(word)) {
+            arr[i] = "Malkovitch";
+        }
+    }
+    document.getElementById("text").value = arr.join(' ');
 }
