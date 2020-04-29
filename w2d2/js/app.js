@@ -119,5 +119,4 @@ employee.setAddress = function (newAddress) {
 };
 
 employee.setAddress("fairfield");
-console.log(" Address: " + employee.address);
 console.log(" Address: " + employee.getAddress());
