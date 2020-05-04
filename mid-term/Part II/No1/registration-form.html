@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">HolyCross Medical </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="registration-form.html">Patients</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <span class="navbar-text">
+                    Welcome, Guest
+                  </span>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Patients Registration</h2>
+
+            <form method="POST" id="registrationForm">                   
+                <div class="form-group">
+                    <label for="patientID">*Patient ID No:</label>
+                    <input required type="text" class="form-control" id="patientID" placeholder="EP-XXX-XXXXXX" pattern="(((E)?P-)+\d{3}-\d{6})">
+                    <small>Enter the Patient ID Number, in the specifed format</small>
+                </div>
+                <div class="row"> 
+                    <div class="col-sm-4">                  
+                        <div class="form-group">
+                            <label for="firstName">*First Name:</label>
+                            <input required type="text" class="form-control" id="firstName" placeholder="Enter your First Name">
+                            <small>Enter the Patient's First Name</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="doB">*Date of Birth:</label>
+                            <input type="text" class="form-control" id="doB" placeholder="mm/dd/yyyy" pattern="\d{2}+/+\d{2}+/+\d{4}" required> 
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="middleInitals">Middle Inital(s):</label>
+                            <input type="text" class="form-control" id="middleInitals" placeholder="Enter Middle Inital(s)"> 
+                            <small>  </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="department">*Depatment</label>
+                            <select name="department" id="department" class="form-control" required>
+                                <option value="">Select...</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Ear, Nose and Throat">Ear, Nose and Throat</option>
+                                <option value="Primary Care">Primary Care</option>
+                                <option value="Unassigned">[Unassigned]</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">                  
+                        <div class="form-group">
+                            <label for="lastName">*Last Name:</label>
+                            <input required type="text" class="form-control" id="lastName" placeholder="Enter your Last Name">
+                            <small>Enter the Patient's Last Name</small>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label for="Out-patient">*Is this an Out-patient</label><br>
+                                <label class="radio-inline">
+                                    <input required type="radio" name="radioOutpatient" value="yes" id="yes">Yes
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input required type="radio" name="radioOutpatient" value="no" id="no">No
+                                  </label>
+                            </div>
+                             
+                        </div>
+                        <div class="form-group" style="float: right;">
+                            <button type="reset" class="btn btn btn-secondary btn-reset">Reset</button>
+                            <button type="submit" class="btn btn-success btn-add" >Register Patient</button>
+                        </div>
+                        
+                    </div>
+                                     
+                    <div class="form-group filters">
+                        <label class="checkbox-inline"><input type="checkbox" id="elderly" value="elderly">Show Elderly Patients only</label>
+                        <label class="checkbox-inline"><input type="checkbox" id="outPatient" value="Out-patient">Show Out-Patients only</label>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <table class="table tbodyPatientList">
+                    <thead>
+                      <tr>
+                        <th>Patient ID No</th>
+                        <th>First Name</th>
+                        <th>Middle Initals(s)</th>
+                        <th>Last Name</th>
+                        <th>Date of Birth</th>
+                        <th>Department</th>
+                        <th>Out-patient?</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbodyPatientList">
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
