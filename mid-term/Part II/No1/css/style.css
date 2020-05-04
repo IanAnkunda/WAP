@@ -1,0 +1,23 @@
+.padding-top{
+    padding-top: 10px;
+}
+.padding{
+    padding: 10px;
+}
+.margin-footer{
+    margin-left: 1em;
+}
+.footer-yr{
+    float: right;
+    margin-right: 1em;
+}
+.color-orange{
+    color: orangered;
+}
+.navbar-orange{
+    background-color: #ff5200de;
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
