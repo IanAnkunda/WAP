@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Census Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">The South West - Regional Census</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item  active">
+                  <a class="nav-link" href="census-form.html">Census Form</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                  <span id="clock"></span>
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Census Form</h2>
+
+            <form method="POST" id="censusForm">                   
+                <div class="form-group">
+                    <label for="fullName">*Full Name:</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your Full Name" required>
+                    <small>Enter your Full Name as printed in your  Governement issused ID</small>
+                </div>
+                <div class="row"> 
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="citzenID">*Citzen ID:</label>
+                            <input type="text" class="form-control" id="citzenID" placeholder="XXXXXXXXXX" pattern="\d{10}" required> 
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <select name="state" id="state" class="form-control" required>
+                                <option value="">Select...</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="New Mexico">New Mexico</option>
+                                <option value="Texas">Texas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="SSN">*Social Security Number</label>
+                            <input type="text" class="form-control" id="SSN" placeholder="XXX-XX-XXXX" pattern="\d{3}-\d{2}-\d{4}" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label for="seniorCitzen">*Senior Citzen</label><br>
+                                <label class="radio-inline">
+                                    <input required type="radio" name="seniorCitzen" value="yes" id="yes">Yes
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input required type="radio" name="seniorCitzen" value="no" id="no">No
+                                  </label>
+                            </div>
+                             
+                        </div>
+                        <div class="form-group" style="float: right;">
+                            <button type="reset" class="btn btn btn-secondary btn-reset">Reset</button>
+                            <button type="submit" class="btn btn-success btn-add" >Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Citzen ID</th>
+                        <th>Socail Security</th>
+                        <th>Full Name</th>
+                        <th>State</th>
+                        <th>Senior</th>
+                      </tr>
+                    </thead>
+                    <tbody id="displayTable">
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
